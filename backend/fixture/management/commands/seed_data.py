@@ -242,7 +242,7 @@ class Command(BaseCommand):
                     if tech:
                         relevant_technologies.append(tech)
                     else:
-                        # Если технологии нет, создаем ее
+                        # Если технологии нет, создаем
                         tech = Technology.objects.create(name=tech_name)
                         relevant_technologies.append(tech)
 
